@@ -22,7 +22,7 @@ const reloadBtn = document.querySelector(".reload");
 const toast = document.querySelector(".toast");
 
 //addresses
-const host = "https://easefiles.herokuapp.com/";
+const host = "https://easefiles.herokuapp.com";
 const uploadURL = `${host}/api/files`;
 const emailURL = `${host}/api/files/send`;
 
