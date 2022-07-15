@@ -12,11 +12,12 @@ const connectDB = require("./config/db");
 connectDB();
 
 //cors
-app.use(cors(corsOption));
 
 const corsOptions = {
   origin: process.env.ALLOWED_CLIENTS.split(","),
 };
+
+app.use(cors(corsOptions));
 
 //parse JSON data
 app.use(express.json());
